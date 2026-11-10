@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>🛠 ДЕМО-САЙТ · ремонт санузлов (пример вёрстки)</title>
+<title>Ванна Мечты — ремонт ванных и санузлов под ключ в Москве</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><circle cx='24' cy='24' r='22' fill='%231bb89b'/><g fill='none' stroke='%23fff' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'><path d='M10 25h28v2a8 8 0 0 1-8 8H18a8 8 0 0 1-8-8z'/><path d='M15 25v-6a3 3 0 0 1 3-3h2'/><path d='M16 35v3M32 35v3'/></g><path d='M34 9l1.2 3.2 3.2 1.2-3.2 1.2-1.2 3.2-1.2-3.2-3.2-1.2 3.2-1.2z' fill='%23fff'/></svg>">
 <meta name="description" content="Ремонт ванных комнат и санузлов под ключ в Москве. Своя бригада мастеров, договор, фиксированная смета, гарантия. Бесплатный выезд на замер.">
 <style>
 :root{
@@ -36,6 +37,12 @@ header{position:sticky;top:0;z-index:50;background:rgba(11,21,19,.85);backdrop-f
 .nav{display:flex;align-items:center;justify-content:space-between;gap:28px;height:72px}
 .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:21px;letter-spacing:-.01em}
 .logo .mark{width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,var(--accent),var(--accent-d));display:grid;place-items:center;color:#fff;font-size:18px}
+.logo .emb{width:42px;height:42px;border-radius:50%;border:2px solid var(--accent);display:grid;place-items:center;flex:none;background:radial-gradient(circle at 50% 36%,#12302b,#0b1513)}
+.logo .wm2{font-weight:800;font-size:21px;letter-spacing:-.01em;white-space:nowrap;line-height:1}
+.logo .wm2 i{font-style:normal;color:var(--accent)}
+.foot-emb{width:98px;height:98px;border-radius:50%;background:linear-gradient(160deg,#102a26,#0b1513);border:2px solid var(--accent);display:grid;place-items:center;position:relative;flex:none}
+.foot-emb .arc{position:absolute;inset:0}
+.foot-emb .et{font-size:9px;font-weight:800;letter-spacing:.18em;fill:var(--accent)}
 .menu{display:flex;gap:26px;align-items:center}
 .menu a{font-size:15px;font-weight:600;color:var(--ink);opacity:.82;transition:.15s;white-space:nowrap}
 .menu a:hover{opacity:1;color:var(--accent)}
@@ -306,7 +313,7 @@ footer .bottom{padding-top:22px;display:flex;justify-content:space-between;flex-
 <header>
   <div class="wrap nav">
     <input type="checkbox" id="navtoggle">
-    <a href="#top" class="logo"><span class="mark">Д</span>ДЕМО</a>
+    <a href="#top" class="logo"><span class="emb"><svg width="24" height="24" viewBox="0 0 48 48" fill="none" stroke="#1bb89b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 26h28v2a8 8 0 0 1-8 8H18a8 8 0 0 1-8-8z"/><path d="M15 26v-6a3 3 0 0 1 3-3h2"/><path d="M16 36v3M32 36v3"/><path d="M34 11l1 2.6 2.6 1-2.6 1-1 2.6-1-2.6-2.6-1 2.6-1z" fill="#1bb89b" stroke="none"/></svg></span><span class="wm2">Ванна <i>Мечты</i></span></a>
     <nav class="menu">
       <a href="#services">Услуги</a>
       <a href="#gallery">Галерея</a>
@@ -329,7 +336,7 @@ footer .bottom{padding-top:22px;display:flex;justify-content:space-between;flex-
   <div class="wrap">
     <div>
       <span class="eyebrow" style="color:#8ad9cf">Ремонт санузлов под ключ · Москва и область</span>
-      <h1>Ванная вашей мечты<br>за 15 дней</h1>
+      <h1>Ванная вашей мечты<br>за 12–15 дней</h1>
       <p class="lead">Своя бригада мастеров. Фиксированная смета в договоре — цена не вырастет в процессе. Работаем с договором и гарантией.</p>
       <div class="cta-row">
         <a href="#contact" class="btn lg">Бесплатный замер</a>
@@ -338,7 +345,7 @@ footer .bottom{padding-top:22px;display:flex;justify-content:space-between;flex-
       <div class="stats">
         <div><b>11+ лет</b><small>опыт в ремонте</small></div>
         <div><b>По договору</b><small>фиксированная смета</small></div>
-        <div><b>Вся Москва</b><small>выезд по городу</small></div>
+        <div><b>Москва и область</b><small>выезд по городу</small></div>
       </div>
     </div>
     <div class="hero-card">
@@ -505,7 +512,7 @@ footer .bottom{padding-top:22px;display:flex;justify-content:space-between;flex-
       <div class="cinfo">
         <div class="item"><div class="i">📞</div><div><b><a href="tel:+79999862876" style="color:inherit;text-decoration:none">+7 999 986-28-76</a></b><small>Звонки и WhatsApp · ежедневно 9:00–21:00</small></div></div>
         <div class="item"><div class="i">📍</div><div><b>Москва и область</b><small>Выезжаем по всему городу</small></div></div>
-        <div class="item"><div class="i">✉️</div><div><b>почта — укажите реальную</b><small>сюда подставим e-mail Василия</small></div></div>
+        <div class="item"><div class="i">💬</div><div><b>WhatsApp и Telegram</b><small>Напишите — ответим в течение 15 минут</small></div></div>
       </div>
     </div>
     <form class="form" onsubmit="return false">
@@ -546,7 +553,7 @@ footer .bottom{padding-top:22px;display:flex;justify-content:space-between;flex-
   <div class="wrap">
     <div class="top">
       <div>
-        <div class="logo"><span class="mark">Д</span>ДЕМО</div>
+        <div class="logo"><span class="foot-emb"><svg class="arc" viewBox="0 0 120 120"><defs><path id="fet" d="M18 60a42 42 0 0 1 84 0"/><path id="feb" d="M22 60a38 38 0 0 0 76 0"/></defs><text class="et"><textPath href="#fet" startOffset="50%" text-anchor="middle">ВАННА МЕЧТЫ</textPath></text><text class="et"><textPath href="#feb" startOffset="50%" text-anchor="middle">• ПОД КЛЮЧ •</textPath></text></svg><svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#1bb89b" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 26h32v2a9 9 0 0 1-9 9H17a9 9 0 0 1-9-9z"/><path d="M13 26v-7a3.5 3.5 0 0 1 3.5-3.5H19"/><path d="M15 37v3M33 37v3"/><path d="M34 10l1.1 2.9 2.9 1.1-2.9 1.1-1.1 2.9-1.1-2.9-2.9-1.1 2.9-1.1z" fill="#1bb89b" stroke="none"/></svg></span></div>
         <p style="margin-top:12px;max-width:320px">Ремонт ванных комнат и санузлов под ключ в Москве. Своя бригада, договор, гарантия.</p>
       </div>
       <div><b style="color:#fff;display:block;margin-bottom:12px">Разделы</b>
@@ -556,18 +563,16 @@ footer .bottom{padding-top:22px;display:flex;justify-content:space-between;flex-
         <a href="#faq" style="display:block">Вопросы</a>
       </div>
       <div><b style="color:#fff;display:block;margin-bottom:12px">Контакты</b>
-        <p style="margin-bottom:8px">+7 ___ ___-__-__</p>
+        <p style="margin-bottom:8px"><a href="tel:+79999862876" style="color:inherit;text-decoration:none">+7 999 986-28-76</a></p>
         <p>Москва и область</p>
       </div>
     </div>
     <div class="bottom">
-      <span>© 2026 ДЕМО. Все права защищены.</span>
-      <span>Демо-сайт · пример вёрстки</span>
+      <span>© 2026 Ванна Мечты. Все права защищены.</span>
+      <span>Работаем по договору · гарантия на работы</span>
     </div>
   </div>
 </footer>
-
-<div class="demo-badge">Демо-пример · данные условные</div>
 
 <script>
 (function(){
@@ -603,7 +608,7 @@ footer .bottom{padding-top:22px;display:flex;justify-content:space-between;flex-
 <script>
 (function(){
   var CX=document.querySelector('.calcx'); if(!CX) return;
-  var SANUZEL={bath:['Ванная комната',130000],toilet:['Туалет',93000],combo:['Совмещённый санузел',93600]};
+  var SANUZEL={bath:['Ванная комната',95000],toilet:['Туалет',48000],combo:['Совмещённый санузел',89000]};
   var ROOMS=[['kitchen','Кухня',13690,30],['living','Жилая комната',13690,30],['hall','Гостиная',14444,40],['bed','Спальня',13300,30],['entry','Прихожая',12900,20],['corridor','Коридор',12600,20]];
   var FLAT=[['cosmetic','Косметический',12600],['capital','Капитальный',13600],['newbuild','Новостройка',12600],['resale','Вторичка',14936],['design','Дизайнерский',19300],['premium','Премиальный',24630]];
   var mode='rooms', san={bath:true,toilet:false,combo:false}, roomArea={}, flatType='cosmetic', flatArea=40;
@@ -665,7 +670,7 @@ footer .bottom{padding-top:22px;display:flex;justify-content:space-between;flex-
 (function(){
   var imgs=[].slice.call(document.querySelectorAll('.carousel .slide img')); if(!imgs.length) return;
   var ov=document.createElement('div'); ov.className='lbox';
-  ov.innerHTML='<button class="lbx-close" aria-label="Закрыть">&times;</button><button class="lbx-prev" aria-label="Назад">&#8249;</button><img alt=""><button class="lbx-next" aria-label="Вперёд">&#8250;</button><div class="lbx-count"></div>';
+  ov.innerHTML='<button class="lbx-close" aria-label="Закрыть">&times;</button><button class="lbx-prev" aria-label="Назад">&#8249;</button><img alt="Работа Василия — ремонт санузла под ключ"><button class="lbx-next" aria-label="Вперёд">&#8250;</button><div class="lbx-count"></div>';
   document.body.appendChild(ov);
   var big=ov.querySelector('img'), cnt=ov.querySelector('.lbx-count'), cur=0;
   function show(k){cur=(k+imgs.length)%imgs.length; big.src=imgs[cur].getAttribute('src'); big.alt=imgs[cur].alt||''; cnt.textContent=(cur+1)+' / '+imgs.length;}
